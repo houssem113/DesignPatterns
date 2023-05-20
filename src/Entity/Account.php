@@ -12,7 +12,7 @@ class Account
      */ 
     public function setPassword(string $password): void
     {
-        if (!preg_match('/[$*%]/', $password)) throw new \Exception('Le mot de password doit etre complexe');
+        if (!preg_match('/[$*%]/', $password)) throw new \Exception('Le mot de password doit etre complexe(avec un caractere special)');
         $this->password = $password;
     }
 

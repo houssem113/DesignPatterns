@@ -3,7 +3,7 @@
         'name' => 'houssemrahrah/design',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '960babfab89d205633bc20aed073f2627a328128',
+        'reference' => '3dd4006e909926af708df507900536fc9e6cda8b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'houssemrahrah/design' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '960babfab89d205633bc20aed073f2627a328128',
+            'reference' => '3dd4006e909926af708df507900536fc9e6cda8b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
