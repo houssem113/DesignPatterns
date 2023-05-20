@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"AccountTest::testIfAccountThrowExceptionIfPasswordDosntContainSpecialCharacter":0.033,"AccountTest::testIfAccountThrowRigthException":0.002}}
