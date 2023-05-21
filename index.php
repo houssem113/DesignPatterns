@@ -8,6 +8,7 @@ use App\DependencyInjection\Payment;
 use App\DependencyInjection\Paypal;
 use App\DependencyInjection\Stripe;
 use App\Entity\Account;
+use App\Factory\FormuleFactory;
 use App\Polymorphisme\Messages\MessageGenerator;
 use App\Polymorphisme\AlertMessages\DefaultMessage;
 use App\Polymorphisme\AlertMessages\WarnningMessage;
@@ -71,3 +72,20 @@ var_dump($messageGenerator->generate($warnningMessage)); // warning color
 // qui peut fonctionner avec divers types d'objets sans avoir besoin de connaître leur classe spécifique.
 
 
+// Factory 
+
+$factory = new FormuleFactory();
+
+$basicFormule = $factory->createFormule('basic');
+var_dump($basicFormule);
+
+$premiumFormule = $factory->createFormule('premium');
+var_dump($premiumFormule);
+
+// Le design pattern Factory est un modèle de conception qui fournit une méthode générique pour 
+// créer des objets sans spécifier explicitement leur classe concrète. 
+// Il encapsule le processus de création d'objets dans une méthode ou une classe dédiée, 
+// appelée "fabrique" (factory).. La fabrique est chargée de créer et d'instancier les objets 
+// appropriés en fonction des paramètres ou des conditions spécifiés. 
+// Ainsi, le code client n'a pas besoin de connaître les détails de la création d'objets 
+// et reste indépendant des classes concrètes.
