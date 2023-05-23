@@ -12,6 +12,7 @@ use App\Factory\FormuleFactory;
 use App\Polymorphisme\Messages\MessageGenerator;
 use App\Polymorphisme\AlertMessages\DefaultMessage;
 use App\Polymorphisme\AlertMessages\WarnningMessage;
+use Enum\Status;
 
 define('BASE_PATH', dirname(__DIR__));
 
@@ -89,3 +90,15 @@ var_dump($premiumFormule);
 // appropriés en fonction des paramètres ou des conditions spécifiés. 
 // Ainsi, le code client n'a pas besoin de connaître les détails de la création d'objets 
 // et reste indépendant des classes concrètes.
+
+
+// Enum
+
+$status = Status::fromStatusCode(1);
+var_dump($status); // Success
+// Une énumération est un type de données spécial qui permet de définir un ensemble fini de valeurs 
+// constantes nommées. Cela facilite la création de variables dont la valeur ne peut être qu'une 
+// des constantes prédéfinies de l'énumération. 
+// Les énumérations sont souvent utilisées pour représenter des ensembles de choix possibles.
+// Notez que les énumérations en PHP 8.1 sont des classes spéciales, et les constantes de 
+// l'énumération sont des instances uniques de cette classe. 
